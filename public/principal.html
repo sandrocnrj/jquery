@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <title>Alura Typer</title>
+    <link rel="stylesheet" type="text/css" href="css/libs/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/estilos.css">
 </head>
 <body>
-    <!-- Seja bem vindo ao curso de jQuery :) -->
-    <h1>Alura Typer</h1>
-    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+	<div class="container">
+	    <!-- Seja bem vindo ao curso de jQuery :) -->
+	    <h1 class="center">Alura Typer</h1>
+	    <p class="frase center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
 
-    <ul class="informacoes">
-        <li><span id="tamanho-frase">19</span> palavras</li>
-    	<li><span id="tempo-digitacao">10</span> segundos</li>
-    </ul>
+	    <ul class="center informacoes">
+	        <li><span id="tamanho-frase">19</span> palavras</li>
+	    	<li><span id="tempo-digitacao">10</span> segundos</li>
+	    </ul>
 
-    <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
-    <button id="botao-reiniciar">Reiniciar Jogo</button>
+	    <textarea class="campo-digitacao" rows="8" cols ="40"></textarea>
+	    <button id="botao-reiniciar">Reiniciar Jogo</button>
 
-    <ul>
-    	<li><span id="contador-caracteres">0</span> caracteres</li>
-    	<li><span id="contador-palavras">0</span> palavras</li>
-	</ul>
+	    <ul class="center informacoes">
+	    	<li><span id="contador-caracteres">0</span> caracteres</li>
+	    	<li><span id="contador-palavras">0</span> palavras</li>
+		</ul>
+	</div>
 
     <script src="js/jquery.js"></script>
     <script src="js/main.js"></script>
