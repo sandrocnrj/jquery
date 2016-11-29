@@ -14,7 +14,7 @@ function inicializarMarcadores() {
 	campo.on("input", function() {
 		var digitado = campo.val();
 		var comparavel = frase.substr(0, digitado.length);
-		
+
 		if(digitado == comparavel) {
 			campo.removeClass("borda-vermelha");
 			campo.addClass("borda-verde");		
@@ -55,6 +55,7 @@ function inicializaCronometro(){
 				campo.attr("disabled", true);
 				clearInterval(cronometroID);
 				campo.toggleClass("campo-desativado");
+				inserePlacar();
 			}
 		}, 1000);
 	});
@@ -74,3 +75,17 @@ function reiniciaJogo(){
 	campo.removeClass("borda-vermelha");
 	campo.removeClass("borda-verde");
 };
+
+function inserePlacar() {
+
+	var corpoTabela = $(".pĺacar").find("tbody");
+	var usuario = "Sandro";
+	var numPalavras = $("#contador-palavras").text();
+
+	var linha = "<tr>" +
+					"<td>" + usuario + "</td>" + 
+					"<td>" + numPalavras + "</td>" + 
+				"</tr>";	
+
+	corpoTabela.append(linha);
+}
