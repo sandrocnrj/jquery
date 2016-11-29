@@ -8,14 +8,14 @@
 	text-align: left;
 }
 
-.informacoes {	
-	text-align: left;
-}
-
 .campo-desativado {
 	background-color: lightgray;
 }
 
 .campo-ativado {
 	background-color: white;
+}
+
+.icones {
+	vertical-align: middle;
 }
